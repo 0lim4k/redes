@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Development | Camilo Uribe</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">C</span> Camilo Uribe</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/profile.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Camilo Uribe<br />Full Stack<br />Developer</h1>
+        </div>
+        <p class="section__description">
+          Soy estudiante de la Universidad El Bosque en Colombia, desarrollador
+          full stack especializado en desarrollo de aplicaciones web y front-end. 
+          Tengo experiencia en HTML, CSS, JavaScript, Spring Boot, SQL, Oracle y más.
+        </p>
+        <div class="header__btn">
+          <a href="#contact" class="btn">Contratame</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <h2 class="section__header">Sobre Mí</h2>
+        <p class="section__description">
+          Apasionado por el desarrollo web, fusiono estética con funcionalidad para
+          crear soluciones digitales innovadoras. Con un enfoque en la experiencia
+          de usuario y una mentalidad de aprendizaje continuo, mi meta es convertir
+          ideas en aplicaciones que generen impacto.
+        </p>
+        <p class="section__description">
+          Mi experiencia incluye proyectos en diversas tecnologías como HTML, CSS,
+          JavaScript, así como desarrollo backend con Spring Boot y Node.js. 
+          Me motiva aprender constantemente para mantenerme actualizado con las 
+          tendencias y mejores prácticas en desarrollo de software.
+        </p>
+        <p class="section__description">
+          Además, tengo habilidades en gestión de proyectos y trabajo en equipo,
+          participando en entornos colaborativos donde la comunicación y el
+          compromiso son claves. Mi enfoque principal es construir soluciones que no
+          solo sean técnicamente sólidas, sino también atractivas y fáciles de usar.
+        </p>
+        <div class="about__btn">
+          <button class="btn">Descargar CV</button>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">Mis Servicios</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Diseño Web</h4>
+          <p>
+            Creación de interfaces amigables y funcionales que destacan en el mundo digital.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>Soluciones E-commerce</h4>
+          <p>
+            Desarrollo de tiendas en línea escalables y seguras, enfocadas en la conversión.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Desarrollo Móvil</h4>
+          <p>
+            Aplicaciones móviles optimizadas para brindar experiencias fluidas y atractivas.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section__container">
+      <div class="calculator__wrapper">
+        <h1>Calculadora de IP V4</h1>
+        <form id="ipForm">
+          <label for="ip">Dirección IP (formato X.X.X.X):</label>
+          <input type="text" id="ip" placeholder="192.168.0.1" required>
+    
+          <label for="mask">Máscara de red (en formato X.X.X.X):</label>
+          <input type="text" id="mask" placeholder="255.255.255.0" required>
+    
+          <button type="submit">Calcular</button>
+        </form>
+    
+        <div id="result">
+          <h2>Resultados:</h2>
+          <p><strong>IP de Red:</strong> <span id="networkIP"></span></p>
+          <p><strong>IP de Broadcast:</strong> <span id="broadcastIP"></span></p>
+          <p><strong>Cantidad de IP útiles:</strong> <span id="hostCount"></span></p>
+          <p><strong>Rango de IP útiles:</strong> <span id="usableRange"></span></p>
+          <p><strong>Clase de IP:</strong> <span id="ipClass"></span></p>
+          <p><strong>Tipo de IP (Pública/Privada):</strong> <span id="ipType"></span></p>
+    
+          <h2>Representación Binaria:</h2>
+          <p id="binaryRepresentation"></p>
+        </div>
+      </div>
+    </section> 
+  
+
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">C</div>
+      <h2 class="section__header">¡Conversemos!</h2>
+      <p class="section__description">
+        Estoy disponible para proyectos colaborativos o cualquier consulta.
+      </p>
+      <div class="contact__socials">
+        <a href="https://www.instagram.com/kami._.lo/"><i class="ri-instagram-fill"></i></a>
+        <a href="https://www.linkedin.com/in/camilo-uribe-72aa3b329/"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://co.pinterest.com/parce_n0/"><i class="ri-pinterest-line"></i></a>
+        <a href="mailto:jcamiloup@gmail.com"><i class="ri-mail-fill"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      Copyright © 2024 Camilo. Todos los derechos reservados.
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
